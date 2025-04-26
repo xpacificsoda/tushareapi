@@ -1,5 +1,6 @@
 # Configuration files
 config.properties
+stock.sql
 
 # IDE specific files
 .idea/
