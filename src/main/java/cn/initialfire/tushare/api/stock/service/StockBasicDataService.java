@@ -15,18 +15,38 @@ import java.util.List;
 
 public class StockBasicDataService {
 
+    /**
+     * 股票列表接口：https://tushare.pro/document/2?doc_id=25
+     * @param request
+     * @return
+     */
     public List<StockBasicInfo> queryStockList(QueryStockListRequest request) {
         return TushareHttp.instance().send("stock_basic", request, new TypeReference<List<StockBasicInfo>>() {});
     }
 
+    /**
+     * 上市公司基本信息接口：https://tushare.pro/document/2?doc_id=112
+     * @param request
+     * @return
+     */
     public List<StockCompanyInfo> queryStockCompanyInfoList(QueryStockInfoRequest request) {
         return TushareHttp.instance().send("stock_company", request, new TypeReference<List<StockCompanyInfo>>() {});
     }
 
+    /**
+     * 上市公司高管信息接口：https://tushare.pro/document/2?doc_id=193
+     * @param request
+     * @return
+     */
     public List<StockManagerInfo> queryStockManagerInfoList(StockRangeRequestV2 request) {
         return TushareHttp.instance().send("stk_managers", request, new TypeReference<List<StockManagerInfo>>() {});
     }
 
+    /**
+     * 上市公司高管薪酬信息接口：https://tushare.pro/document/2?doc_id=194
+     * @param request
+     * @return
+     */
     public List<StockManagerRewardInfo> queryStockManagerRewardInfoList(StockEndDateRequest request) {
         return TushareHttp.instance().send("stk_rewards", request, new TypeReference<List<StockManagerRewardInfo>>() {});
     }
