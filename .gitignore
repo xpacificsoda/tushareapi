@@ -1,0 +1,10 @@
+# Configuration files
+config.properties
+
+# IDE specific files
+.idea/
+*.iml
+.vscode/
+
+# Maven
+target/ 
