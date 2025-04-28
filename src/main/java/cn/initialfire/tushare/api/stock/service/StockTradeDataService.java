@@ -8,6 +8,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.util.List;
 
+/**
+ * 行情数据：https://tushare.pro/document/2?doc_id=15
+ */
 public class StockTradeDataService {
 
     /**

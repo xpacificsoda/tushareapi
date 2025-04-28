@@ -32,7 +32,7 @@ public class Main {
         request.setTsCode(tsCode);
         request.setTradeDate("20240926");
 
-        List<StockVolumePriceRecord> records = tradeDataService.daily(request);
+        List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(request);
         System.out.println(records);
 
         List<StockAdjustmentFactorRecord> adjustmentFactorRecords = tradeDataService.adjustmentFactor(request);

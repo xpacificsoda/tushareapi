@@ -8,6 +8,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import cn.initialfire.tushare.api.TushareHttp;
 import java.util.List;
 
+/**
+ * 财务数据：https://tushare.pro/document/2?doc_id=16
+ */
 public class StockFinanceDataService {
 
     /**
