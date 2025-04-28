@@ -36,7 +36,7 @@ List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(r
 
 ### 财务数据 - TushareAPI.Stock.FinanceDataService
 这个类封装了 [财务数据](https://tushare.pro/document/2?doc_id=16) 下的 API。
-| 类 | 方法 | 作用 |
+| 对象 | 方法 | 作用 |
 |--------------|--------|-------------|
 | TushareAPI.Stock.FinanceDataService | incomeReport | [利润表接口](https://tushare.pro/document/2?doc_id=33) |
 | TushareAPI.Stock.FinanceDataService | balanceSheetReport | [资产负债表接口](https://tushare.pro/document/2?doc_id=36) |
