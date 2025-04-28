@@ -16,12 +16,8 @@ public class HttpUtils {
     public static String post(String url, String json) {
         RequestBody body = RequestBody.create(json, MediaType.parse("application/json"));
         Request request = new Request.Builder().url(url).post(body).build();
-        System.out.println("Request URL: " + url);
-        System.out.println("Request Body: \n" + json);
         try (Response response = client.newCall(request).execute()) {
             String responseBody = response.body().string();
-            System.out.println("Response Status: " + response.code());
-            System.out.println("Response Body: \n" + responseBody);
             if (!response.isSuccessful()) {
                 String message = String.format("HTTP request failed with status code %s, url: %s, body: %s", response.code(), url, json);
                 throw new TushareException(ErrorCodes.INVOKE_TUSHARE_API_ERROR, message);

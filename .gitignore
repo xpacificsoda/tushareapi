@@ -1,6 +1,9 @@
 # Configuration files
 config.properties
+
+# temp files
 stock.sql
+api.markdown
 
 # IDE specific files
 .idea/

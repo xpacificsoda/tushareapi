@@ -42,11 +42,6 @@ public class StockBasicDataService {
         return TushareHttp.instance().send("stk_managers", request, new TypeReference<List<StockManagerInfo>>() {});
     }
 
-    /**
-     * 上市公司高管薪酬信息接口：https://tushare.pro/document/2?doc_id=194
-     * @param request
-     * @return
-     */
     public List<StockManagerRewardInfo> queryStockManagerRewardInfoList(StockEndDateRequest request) {
         return TushareHttp.instance().send("stk_rewards", request, new TypeReference<List<StockManagerRewardInfo>>() {});
     }

@@ -1,9 +1,15 @@
 package cn.initialfire.tushare.api.stock.requestdata;
 
 import cn.initialfire.tushare.api.stock.commonvo.StockEnums;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class QueryStockListRequest {
 
     // TS股票代码

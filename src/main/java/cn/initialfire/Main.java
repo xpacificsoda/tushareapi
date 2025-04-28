@@ -3,7 +3,8 @@ package cn.initialfire;
 import cn.initialfire.tushare.api.TushareAPI;
 import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequest;
 import cn.initialfire.tushare.api.stock.responsedata.StockVolumePriceRecord;
-
+import cn.initialfire.tushare.api.stock.service.StockTradeDataService;
+import cn.initialfire.tushare.api.stock.responsedata.StockAdjustmentFactorRecord;
 import java.util.List;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -23,11 +24,19 @@ public class Main {
             System.exit(1);
         }
 
+        String tsCode = "002027.SZ";
+
+        StockTradeDataService tradeDataService = TushareAPI.Stock.TradeDataService;
+
         StockRangeRequest request = new StockRangeRequest();    
-        request.setTsCode("002304.SZ");
-        request.setStartDate("20250102");
-        request.setEndDate("20250103");
-        List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(request);
+        request.setTsCode(tsCode);
+        request.setTradeDate("20240926");
+
+        List<StockVolumePriceRecord> records = tradeDataService.daily(request);
         System.out.println(records);
+
+        List<StockAdjustmentFactorRecord> adjustmentFactorRecords = tradeDataService.adjustmentFactor(request);
+        System.out.println(adjustmentFactorRecords);
+        
     }
 }

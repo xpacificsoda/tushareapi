@@ -1,5 +1,7 @@
 package cn.initialfire.tushare.api.stock.commonvo;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 /**
  * Enums for stock-related fields
  */
@@ -8,6 +10,7 @@ public class StockEnums {
     /**
      * Market type enum
      */
+    @JsonDeserialize(using = MarketDeserializer.class)
     public enum Market {
         MAIN("主板"), // main board
         GEM("创业板"), // growth enterprise market
