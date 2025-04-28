@@ -27,6 +27,7 @@ List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(r
 ### 行情数据 - StockTradeDataService
 这个类封装了 [行情数据](https://tushare.pro/document/2?doc_id=15) 下的 API。
 | 类 | 方法 | 作用 |
+|--------------|--------|-------------|
 | StockTradeDataService | daily | [日K线数据接口](https://tushare.pro/document/2?doc_id=27) |
 | StockTradeDataService | weekly | [周K线数据接口](https://tushare.pro/document/2?doc_id=144) |
 | StockTradeDataService | monthly | [月K线数据接口](https://tushare.pro/document/2?doc_id=145) |
@@ -35,6 +36,7 @@ List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(r
 ### 财务数据 - StockFinanceDataService
 这个类封装了 [财务数据](https://tushare.pro/document/2?doc_id=16) 下的 API。
 | 类 | 方法 | 作用 |
+|--------------|--------|-------------|
 | StockFinanceDataService | incomeReport | [利润表接口](https://tushare.pro/document/2?doc_id=33) |
 | StockFinanceDataService | balanceSheetReport | [资产负债表接口](https://tushare.pro/document/2?doc_id=36) |
 | StockFinanceDataService | cashflowReport | [现金流量表接口](https://tushare.pro/document/2?doc_id=44) |

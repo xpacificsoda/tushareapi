@@ -27,6 +27,7 @@ This class encapsulates APIs under [Basic Data](https://tushare.pro/document/2?d
 ### Market Data - StockTradeDataService
 This class encapsulates APIs under [Market Data](https://tushare.pro/document/2?doc_id=15).
 | Class | Method | Description |
+|--------------|--------|-------------|
 | StockTradeDataService | daily | [Daily K-line Data API](https://tushare.pro/document/2?doc_id=27) |
 | StockTradeDataService | weekly | [Weekly K-line Data API](https://tushare.pro/document/2?doc_id=144) |
 | StockTradeDataService | monthly | [Monthly K-line Data API](https://tushare.pro/document/2?doc_id=145) |
@@ -35,6 +36,7 @@ This class encapsulates APIs under [Market Data](https://tushare.pro/document/2?
 ### Financial Data - StockFinanceDataService
 This class encapsulates APIs under [Financial Data](https://tushare.pro/document/2?doc_id=16).
 | Class | Method | Description |
+|--------------|--------|-------------|
 | StockFinanceDataService | incomeReport | [Income Statement API](https://tushare.pro/document/2?doc_id=33) |
 | StockFinanceDataService | balanceSheetReport | [Balance Sheet API](https://tushare.pro/document/2?doc_id=36) |
 | StockFinanceDataService | cashflowReport | [Cash Flow Statement API](https://tushare.pro/document/2?doc_id=44) | 
