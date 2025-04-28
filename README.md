@@ -1,5 +1,5 @@
 # Tushare API Java SDK
-这是一个对 [Tushare](https://tushare.pro/) 的 API 封装的 Java SDK。
+这是一个对 [Tushare](https://tushare.pro/) 的 API 封装的 Java SDK。[Tushare](https://tushare.pro/) 是一个提供 A 股数据的网站。
 
 ## 基本用法
 `
@@ -8,7 +8,7 @@ TushareAPI.setToken("your Tushare token");
 
 // 调用对应的 API
 StockRangeRequest request = new StockRangeRequest();    
-request.setTsCode(tsCode);
+request.setTsCode("002027.SZ");
 request.setTradeDate("20240926");
 
 List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(request);
