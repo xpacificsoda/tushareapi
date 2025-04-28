@@ -24,19 +24,13 @@ public class Main {
             System.exit(1);
         }
 
-        String tsCode = "002027.SZ";
-
-        StockTradeDataService tradeDataService = TushareAPI.Stock.TradeDataService;
-
-        StockRangeRequest request = new StockRangeRequest();    
-        request.setTsCode(tsCode);
-        request.setTradeDate("20240926");
+        StockRangeRequest request = StockRangeRequest.builder()
+            .tsCode("002027.SZ")
+            .tradeDate("20240926")
+            .build();    
 
         List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(request);
         System.out.println(records);
-
-        List<StockAdjustmentFactorRecord> adjustmentFactorRecords = tradeDataService.adjustmentFactor(request);
-        System.out.println(adjustmentFactorRecords);
         
     }
 }

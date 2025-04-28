@@ -10,8 +10,8 @@ public class TushareAPI {
     }
 
     public static class Stock {
-        public static final StockBasicDataService basicDataService = new StockBasicDataService();
+        public static final StockBasicDataService BasicDataService = new StockBasicDataService();
         public static final StockTradeDataService TradeDataService = new StockTradeDataService();
-        public static final StockFinanceDataService financeDataService = new StockFinanceDataService();
+        public static final StockFinanceDataService FinanceDataService = new StockFinanceDataService();
     }
 }
