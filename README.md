@@ -2,7 +2,7 @@
 这是一个对 [Tushare](https://tushare.pro/) 的 API 封装的 Java SDK。[Tushare](https://tushare.pro/) 是一个提供 A 股数据的网站。
 
 ## 基本用法
-`
+```java
 // 设置 token
 TushareAPI.setToken("your Tushare token");
 
@@ -12,7 +12,7 @@ request.setTsCode("002027.SZ");
 request.setTradeDate("20240926");
 
 List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(request);
-`
+```
 
 ## 目前为初始版本，仅包含以下 API
 ### 基础数据 StockBasicDataService
