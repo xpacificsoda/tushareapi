@@ -40,4 +40,9 @@ This class encapsulates APIs under [Financial Data](https://tushare.pro/document
 |--------------|--------|-------------|
 | TushareAPI.Stock.FinanceDataService | incomeReport | [Income Statement API](https://tushare.pro/document/2?doc_id=33) |
 | TushareAPI.Stock.FinanceDataService | balanceSheetReport | [Balance Sheet API](https://tushare.pro/document/2?doc_id=36) |
-| TushareAPI.Stock.FinanceDataService | cashflowReport | [Cash Flow Statement API](https://tushare.pro/document/2?doc_id=44) | 
+| TushareAPI.Stock.FinanceDataService | cashflowReport | [Cash Flow Statement API](https://tushare.pro/document/2?doc_id=44) |
+| TushareAPI.Stock.FinanceDataService | queryDividendRecords | [Dividend and Stock Split Data API](https://tushare.pro/document/2?doc_id=103) |
+| TushareAPI.Stock.FinanceDataService | queryFinanceIndicators | [Financial Indicators API](https://tushare.pro/document/2?doc_id=79) |
+| TushareAPI.Stock.FinanceDataService | queryFinanceAudit | [Financial Audit API](https://tushare.pro/document/2?doc_id=80) |
+| TushareAPI.Stock.FinanceDataService | queryMainBizIncome | [Main Business Income Composition API](https://tushare.pro/document/2?doc_id=81) |
+| TushareAPI.Stock.FinanceDataService | queryDisclosurePlan | [Disclosure Plan API](https://tushare.pro/document/2?doc_id=162) |
