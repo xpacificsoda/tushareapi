@@ -9,6 +9,9 @@ import cn.initialfire.tushare.api.stock.responsedata.StockCompanyInfo;
 import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV2;
 import cn.initialfire.tushare.api.stock.responsedata.StockManagerRewardInfo;
 import cn.initialfire.tushare.api.stock.responsedata.StockManagerInfo;
+import cn.initialfire.tushare.api.stock.responsedata.StockNameChangeRecord;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV6;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.util.List;
@@ -25,6 +28,15 @@ public class StockBasicDataService {
      */
     public List<StockBasicInfo> queryStockList(QueryStockListRequest request) {
         return TushareHttp.instance().send("stock_basic", request, new TypeReference<List<StockBasicInfo>>() {});
+    }
+
+    /**
+     * 股票名称变更记录接口：https://tushare.pro/document/2?doc_id=100
+     * @param request
+     * @return
+     */
+    public List<StockNameChangeRecord> queryStockNameChangeRecordList(StockRangeRequestV6 request) {
+        return TushareHttp.instance().send("namechange", request, new TypeReference<List<StockNameChangeRecord>>() {});
     }
 
     /**

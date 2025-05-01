@@ -21,6 +21,7 @@ This class encapsulates APIs under [Basic Data](https://tushare.pro/document/2?d
 | Object | Method | Description |
 |--------------|--------|-------------|
 | TushareAPI.Stock.BasicDataService | queryStockList | [Stock List API](https://tushare.pro/document/2?doc_id=25) |
+| TushareAPI.Stock.BasicDataService | queryStockNameChangeRecordList | [Stock Name Change Records API](https://tushare.pro/document/2?doc_id=100) |
 | TushareAPI.Stock.BasicDataService | queryStockCompanyInfoList | [Listed Company Basic Information API](https://tushare.pro/document/2?doc_id=112) |
 | TushareAPI.Stock.BasicDataService | queryStockManagerInfoList | [Listed Company Executive Information API](https://tushare.pro/document/2?doc_id=193) |
 | TushareAPI.Stock.BasicDataService | queryStockManagerRewardInfoList | [Listed Company Executive Compensation and Shareholding Information API](https://tushare.pro/document/2?doc_id=194) |

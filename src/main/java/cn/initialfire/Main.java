@@ -1,8 +1,8 @@
 package cn.initialfire;
 
 import cn.initialfire.tushare.api.TushareAPI;
-import cn.initialfire.tushare.api.stock.requestdata.StockEndDateRequest;
-import cn.initialfire.tushare.api.stock.responsedata.StockPledgeStat;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV6;
+import cn.initialfire.tushare.api.stock.responsedata.StockNameChangeRecord;
 import java.util.List;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -23,13 +23,12 @@ public class Main {
         }
 
         String tsCode = "002027.SZ";
-        String endDate = "20151231";
 
-        List<StockPledgeStat> pledgeStat = TushareAPI.Stock.ReferenceDataService
-                .queryStockPledgeStat(StockEndDateRequest.builder()
-                        .tsCode(tsCode)
-                        .endDate(endDate)
-                        .build());
-        System.out.println(pledgeStat);
+        StockRangeRequestV6 request = StockRangeRequestV6.builder()
+                .tsCode(tsCode)
+                .build();
+        List<StockNameChangeRecord> stockNameChangeRecordList = TushareAPI.Stock.BasicDataService
+                .queryStockNameChangeRecordList(request);
+        System.out.println(stockNameChangeRecordList);
     }
 }

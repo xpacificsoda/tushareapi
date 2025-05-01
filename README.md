@@ -21,6 +21,7 @@ List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(r
 | 对象 | 方法 | 作用 |
 |--------------|--------|-------------|
 | TushareAPI.Stock.BasicDataService | queryStockList | [股票列表接口](https://tushare.pro/document/2?doc_id=25) |
+| TushareAPI.Stock.BasicDataService | queryStockNameChangeRecordList | [股票名称变更记录接口](https://tushare.pro/document/2?doc_id=100) |
 | TushareAPI.Stock.BasicDataService | queryStockCompanyInfoList | [上市公司基本信息接口](https://tushare.pro/document/2?doc_id=112) |
 | TushareAPI.Stock.BasicDataService | queryStockManagerInfoList | [上市公司高管信息接口](https://tushare.pro/document/2?doc_id=193) |
 | TushareAPI.Stock.BasicDataService | queryStockManagerRewardInfoList | [上市公司高管薪酬和持股信息接](https://tushare.pro/document/2?doc_id=194) |
