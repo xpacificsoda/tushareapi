@@ -53,3 +53,7 @@ List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(r
 |--------------|--------|-------------|
 | TushareAPI.Stock.ReferenceDataService | topTenHolders | [前十大股东接口](https://tushare.pro/document/2?doc_id=61) |
 | TushareAPI.Stock.ReferenceDataService | topTenFloatHolders | [前十大流通股东接口](https://tushare.pro/document/2?doc_id=62) |
+| TushareAPI.Stock.ReferenceDataService | queryStockPledgeStat | [质押统计接口](https://tushare.pro/document/2?doc_id=110) |
+| TushareAPI.Stock.ReferenceDataService | queryStockPledgeDetail | [质押明细接口](https://tushare.pro/document/2?doc_id=111) |
+| TushareAPI.Stock.ReferenceDataService | queryStockRepurchaseHistory | [股票回购历史接口](https://tushare.pro/document/2?doc_id=124) |
+| TushareAPI.Stock.ReferenceDataService | queryStockHolderTrade | [股东增减持变动接口](https://tushare.pro/document/2?doc_id=175) |

@@ -46,3 +46,14 @@ This class encapsulates APIs under [Financial Data](https://tushare.pro/document
 | TushareAPI.Stock.FinanceDataService | queryFinanceAudit | [Financial Audit API](https://tushare.pro/document/2?doc_id=80) |
 | TushareAPI.Stock.FinanceDataService | queryMainBizIncome | [Main Business Income Composition API](https://tushare.pro/document/2?doc_id=81) |
 | TushareAPI.Stock.FinanceDataService | queryDisclosurePlan | [Disclosure Plan API](https://tushare.pro/document/2?doc_id=162) |
+
+### Market Reference Data - TushareAPI.Stock.ReferenceDataService
+This class encapsulates APIs under [Market Reference Data](https://tushare.pro/document/2?doc_id=17).
+| Object | Method | Description |
+|--------------|--------|-------------|
+| TushareAPI.Stock.ReferenceDataService | topTenHolders | [Top 10 Shareholders API](https://tushare.pro/document/2?doc_id=61) |
+| TushareAPI.Stock.ReferenceDataService | topTenFloatHolders | [Top 10 Floating Shareholders API](https://tushare.pro/document/2?doc_id=62) |
+| TushareAPI.Stock.ReferenceDataService | queryStockPledgeStat | [Pledge Statistics API](https://tushare.pro/document/2?doc_id=110) |
+| TushareAPI.Stock.ReferenceDataService | queryStockPledgeDetail | [Pledge Details API](https://tushare.pro/document/2?doc_id=111) |
+| TushareAPI.Stock.ReferenceDataService | queryStockRepurchaseHistory | [Stock Repurchase History API](https://tushare.pro/document/2?doc_id=124) |
+| TushareAPI.Stock.ReferenceDataService | queryStockHolderTrade | [Shareholder Trading Changes API](https://tushare.pro/document/2?doc_id=175) |
