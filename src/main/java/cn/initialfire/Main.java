@@ -1,9 +1,8 @@
 package cn.initialfire;
 
 import cn.initialfire.tushare.api.TushareAPI;
-import cn.initialfire.tushare.api.stock.service.StockFinanceDataService;
-import cn.initialfire.tushare.api.stock.requestdata.QueryStockDividendRequest;
-import cn.initialfire.tushare.api.stock.responsedata.StockDividendRecord;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV3;
+import cn.initialfire.tushare.api.stock.responsedata.StockShareHolderInfo;
 import java.util.List;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -24,13 +23,19 @@ public class Main {
         }
 
         String tsCode = "002027.SZ";
+        String startDate = "20240101";
+        String endDate = "20241231";
 
-        StockFinanceDataService stockFinanceDataService = TushareAPI.Stock.FinanceDataService;
-
-        QueryStockDividendRequest request1 = QueryStockDividendRequest.builder()
+        StockRangeRequestV3 request = StockRangeRequestV3.builder()
             .tsCode(tsCode)
+            .startDate(startDate)
+            .endDate(endDate)
             .build();
-        List<StockDividendRecord> dividendRecords = stockFinanceDataService.queryDividendRecords(request1);
-        System.out.println(dividendRecords);
+
+        List<StockShareHolderInfo> topTenHolders = TushareAPI.Stock.ReferenceDataService.topTenHolders(request);
+        System.out.println(topTenHolders);
+
+        List<StockShareHolderInfo> topTenFloatHolders = TushareAPI.Stock.ReferenceDataService.topTenFloatHolders(request);
+        System.out.println(topTenFloatHolders);
     }
 }

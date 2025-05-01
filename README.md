@@ -46,3 +46,10 @@ List<StockVolumePriceRecord> records = TushareAPI.Stock.TradeDataService.daily(r
 | TushareAPI.Stock.FinanceDataService | queryFinanceAudit | [财务审计接口](https://tushare.pro/document/2?doc_id=80) |
 | TushareAPI.Stock.FinanceDataService | queryMainBizIncome | [主营业务收入构成接口](https://tushare.pro/document/2?doc_id=81) |
 | TushareAPI.Stock.FinanceDataService | queryDisclosurePlan | [披露计划接口](https://tushare.pro/document/2?doc_id=162) |
+
+### 市场参考数据 - TushareAPI.Stock.ReferenceDataService
+这个类封装了 [市场参考数据](https://tushare.pro/document/2?doc_id=17) 下的 API。
+| 对象 | 方法 | 作用 |
+|--------------|--------|-------------|
+| TushareAPI.Stock.ReferenceDataService | topTenHolders | [前十大股东接口](https://tushare.pro/document/2?doc_id=61) |
+| TushareAPI.Stock.ReferenceDataService | topTenFloatHolders | [前十大流通股东接口](https://tushare.pro/document/2?doc_id=62) |
