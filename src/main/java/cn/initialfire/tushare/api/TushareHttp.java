@@ -37,11 +37,15 @@ public class TushareHttp {
     }
 
     public <T> T send(TushareRequest request, Class<T> responseClass) {
+        String[] fields = JSONUtils.getFieldNames(responseClass);
+        request.setFields(fields);
         TushareResponse response = send(request);
         return JSONUtils.parseObjectFromTableStyleData(response.getData(), responseClass);
     }
 
     public <T> T send(TushareRequest request, TypeReference<T> responseType) {
+        String[] fields = JSONUtils.getFieldNames(responseType);
+        request.setFields(fields);
         TushareResponse response = send(request);
         return JSONUtils.parseObjectFromTableStyleData(response.getData(), responseType);
     }

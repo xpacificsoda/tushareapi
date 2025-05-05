@@ -8,4 +8,5 @@ public class ErrorCodes {
 
     public static final long JSON_SERIALIZATION_ERROR = 10003;
     public static final long JSON_DESERIALIZATION_ERROR = 10004;
+    public static final long JSON_FIELD_NAME_ERROR = 10005;
 }

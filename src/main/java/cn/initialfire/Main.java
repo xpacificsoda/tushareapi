@@ -1,8 +1,8 @@
 package cn.initialfire;
 
 import cn.initialfire.tushare.api.TushareAPI;
-import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV7;
-import cn.initialfire.tushare.api.stock.responsedata.StockIPOInfo;
+import cn.initialfire.tushare.api.stock.requestdata.QueryStockListRequest;
+import cn.initialfire.tushare.api.stock.responsedata.StockBasicInfo;
 
 import java.util.List;
 import java.io.FileInputStream;
@@ -22,14 +22,9 @@ public class Main {
             System.err.println("Example config.properties content:");
             System.exit(1);
         }
-
-        StockRangeRequestV7 request = StockRangeRequestV7.builder()
-                .startDate("20250101")
-                .endDate("20250505")
-                .build();
         
-        List<StockIPOInfo> stockIPOInfoList = TushareAPI.Stock.BasicDataService
-                .queryStockIPOInfoList(request);
-        System.out.println(stockIPOInfoList);
+        List<StockBasicInfo> stockBasicInfoList = TushareAPI.Stock.BasicDataService
+        .queryStockList(QueryStockListRequest.builder().tsCode("000001.SZ").build());
+        System.out.println(stockBasicInfoList);
     }
 }
