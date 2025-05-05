@@ -25,6 +25,7 @@ This class encapsulates APIs under [Basic Data](https://tushare.pro/document/2?d
 | TushareAPI.Stock.BasicDataService | queryStockCompanyInfoList | [Listed Company Basic Information API](https://tushare.pro/document/2?doc_id=112) |
 | TushareAPI.Stock.BasicDataService | queryStockManagerInfoList | [Listed Company Executive Information API](https://tushare.pro/document/2?doc_id=193) |
 | TushareAPI.Stock.BasicDataService | queryStockManagerRewardInfoList | [Listed Company Executive Compensation and Shareholding Information API](https://tushare.pro/document/2?doc_id=194) |
+| TushareAPI.Stock.BasicDataService | queryStockIPOInfoList | [New Stock Issuance API](https://tushare.pro/document/2?doc_id=123) |
 
 ### Market Data - TushareAPI.Stock.TradeDataService
 This class encapsulates APIs under [Market Data](https://tushare.pro/document/2?doc_id=15).

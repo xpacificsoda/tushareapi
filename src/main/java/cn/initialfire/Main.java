@@ -1,8 +1,9 @@
 package cn.initialfire;
 
 import cn.initialfire.tushare.api.TushareAPI;
-import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV6;
-import cn.initialfire.tushare.api.stock.responsedata.StockNameChangeRecord;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV7;
+import cn.initialfire.tushare.api.stock.responsedata.StockIPOInfo;
+
 import java.util.List;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -22,13 +23,13 @@ public class Main {
             System.exit(1);
         }
 
-        String tsCode = "002027.SZ";
-
-        StockRangeRequestV6 request = StockRangeRequestV6.builder()
-                .tsCode(tsCode)
+        StockRangeRequestV7 request = StockRangeRequestV7.builder()
+                .startDate("20250101")
+                .endDate("20250505")
                 .build();
-        List<StockNameChangeRecord> stockNameChangeRecordList = TushareAPI.Stock.BasicDataService
-                .queryStockNameChangeRecordList(request);
-        System.out.println(stockNameChangeRecordList);
+        
+        List<StockIPOInfo> stockIPOInfoList = TushareAPI.Stock.BasicDataService
+                .queryStockIPOInfoList(request);
+        System.out.println(stockIPOInfoList);
     }
 }

@@ -11,6 +11,8 @@ import cn.initialfire.tushare.api.stock.responsedata.StockManagerRewardInfo;
 import cn.initialfire.tushare.api.stock.responsedata.StockManagerInfo;
 import cn.initialfire.tushare.api.stock.responsedata.StockNameChangeRecord;
 import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV6;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV7;
+import cn.initialfire.tushare.api.stock.responsedata.StockIPOInfo;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 
@@ -64,5 +66,14 @@ public class StockBasicDataService {
      */
     public List<StockManagerRewardInfo> queryStockManagerRewardInfoList(StockEndDateRequest request) {
         return TushareHttp.instance().send("stk_rewards", request, new TypeReference<List<StockManagerRewardInfo>>() {});
+    }
+
+    /**
+     * 新股发行接口：https://tushare.pro/document/2?doc_id=123
+     * @param request
+     * @return
+     */
+    public List<StockIPOInfo> queryStockIPOInfoList(StockRangeRequestV7 request) {
+        return TushareHttp.instance().send("new_share", request, new TypeReference<List<StockIPOInfo>>() {});
     }
 }
