@@ -42,717 +42,717 @@ public class StockBalanceSheetReport {
     /**
      * 货币资金
      */
-    private Float moneyCap;
+    private Double moneyCap;
 
     /**
      * 结算备付金
      */
-    private Float settRsrv;
+    private Double settRsrv;
 
     /**
      * 拆出资金
      */
-    private Float loantoOthBankFi;
+    private Double loantoOthBankFi;
 
     /**
      * 交易性金融资产
      */
-    private Float tradAsset;
+    private Double tradAsset;
 
     /**
      * 衍生金融资产
      */
-    private Float derivAssets;
+    private Double derivAssets;
 
     /**
      * 应收票据及应收账款
      */
-    private Float accountsReceivBill;
+    private Double accountsReceivBill;
 
     /**
      * 应收票据
      */
-    private Float notesReceiv;
+    private Double notesReceiv;
 
     /**
      * 应收账款
      */
-    private Float accountsReceiv;
+    private Double accountsReceiv;
 
     /**
      * 应收款项融资
      */
-    private Float receivFinancing;
+    private Double receivFinancing;
 
     /**
      * 预付款项
      */
-    private Float prepayment;
+    private Double prepayment;
 
     /**
      * 其他应收款合计
      */
-    private Float othRcvTotal;
+    private Double othRcvTotal;
 
     /**
      * 应收利息
      */
-    private Float intReceiv;
+    private Double intReceiv;
 
     /**
      * 应收股利
      */
-    private Float divReceiv;
+    private Double divReceiv;
 
     /**
      * 其他应收款
      */
-    private Float othReceiv;
+    private Double othReceiv;
 
     /**
      * 买入返售金融资产
      */
-    private Float purResaleFa;
+    private Double purResaleFa;
 
     /**
      * 存货
      */
-    private Float inventories;
+    private Double inventories;
 
     /**
      * 合同资产
      */
-    private Float contractAssets;
+    private Double contractAssets;
 
     /**
      * 持有待售的资产
      */
-    private Float hfsAssets;
+    private Double hfsAssets;
 
     /**
      * 一年内到期的非流动资产
      */
-    private Float ncaWithin1y;
+    private Double ncaWithin1y;
 
     /**
      * 其他流动资产
      */
-    private Float othCurAssets;
+    private Double othCurAssets;
 
     /**
      * 流动资产合计
      */
-    private Float totalCurAssets;
+    private Double totalCurAssets;
 
     /**
      * 发放贷款及垫款
      */
-    private Float decrInDisbur;
+    private Double decrInDisbur;
 
     /**
      * 债权投资
      */
-    private Float debtInvest;
+    private Double debtInvest;
 
     /**
      * 其他债权投资
      */
-    private Float othDebtInvest;
+    private Double othDebtInvest;
 
     /**
      * 长期应收款
      */
-    private Float ltRec;
+    private Double ltRec;
 
     /**
      * 长期股权投资
      */
-    private Float ltEqtInvest;
+    private Double ltEqtInvest;
 
     /**
      * 其他权益工具投资
      */
-    private Float othEqInvest;
+    private Double othEqInvest;
 
     /**
      * 其他非流动金融资产
      */
-    private Float othIlliqFinAssets;
+    private Double othIlliqFinAssets;
 
     /**
      * 投资性房地产
      */
-    private Float investRealEstate;
+    private Double investRealEstate;
 
     /**
      * 固定资产合计
      */
-    private Float fixAssetsTotal;
+    private Double fixAssetsTotal;
 
     /**
      * 固定资产
      */
-    private Float fixAssets;
+    private Double fixAssets;
 
     /**
      * 在建工程合计
      */
-    private Float cipTotal;
+    private Double cipTotal;
 
     /**
      * 在建工程
      */
-    private Float cip;
+    private Double cip;
 
     /**
      * 工程物资
      */
-    private Float constMaterials;
+    private Double constMaterials;
 
     /**
      * 固定资产清理
      */
-    private Float fixedAssetsDisp;
+    private Double fixedAssetsDisp;
 
     /**
      * 生产性生物资产
      */
-    private Float producBioAssets;
+    private Double producBioAssets;
 
     /**
      * 油气资产
      */
-    private Float oilAndGasAssets;
+    private Double oilAndGasAssets;
 
     /**
      * 使用权资产
      */
-    private Float useRightAssets;
+    private Double useRightAssets;
 
     /**
      * 无形资产
      */
-    private Float intanAssets;
+    private Double intanAssets;
 
     /**
      * 开发支出
      */
-    private Float rAndD;
+    private Double rAndD;
 
     /**
      * 商誉
      */
-    private Float goodwill;
+    private Double goodwill;
 
     /**
      * 长期待摊费用
      */
-    private Float ltAmorExp;
+    private Double ltAmorExp;
 
     /**
      * 递延所得税资产
      */
-    private Float deferTaxAssets;
+    private Double deferTaxAssets;
 
     /**
      * 其他非流动资产
      */
-    private Float othNca;
+    private Double othNca;
 
     /**
      * 非流动资产合计
      */
-    private Float totalNca;
+    private Double totalNca;
 
     /**
      * 资产总计
      */
-    private Float totalAssets;
+    private Double totalAssets;
 
     /**
      * 短期借款
      */
-    private Float stBorr;
+    private Double stBorr;
 
     /**
      * 向中央银行借款
      */
-    private Float cbBorr;
+    private Double cbBorr;
 
     /**
      * 吸收存款及同业存放
      */
-    private Float deposIbDeposits;
+    private Double deposIbDeposits;
 
     /**
      * 拆入资金
      */
-    private Float loanOthBank;
+    private Double loanOthBank;
 
     /**
      * 贵金属
      */
-    private Float precMetals;
+    private Double precMetals;
 
     /**
      * 应收分保未到期责任准备金
      */
-    private Float rrReinsUnePrem;
+    private Double rrReinsUnePrem;
 
     /**
      * 应收分保未决赔款准备金
      */
-    private Float rrReinsOutstdCla;
+    private Double rrReinsOutstdCla;
 
     /**
      * 应收分保寿险责任准备金
      */
-    private Float rrReinsLinsLiab;
+    private Double rrReinsLinsLiab;
 
     /**
      * 应收分保长期健康险责任准备金
      */
-    private Float rrReinsLthinsLiab;
+    private Double rrReinsLthinsLiab;
 
     /**
      * 存出资本保证金
      */
-    private Float refundCapDepos;
+    private Double refundCapDepos;
 
     /**
      * 存出保证金
      */
-    private Float refundDepos;
+    private Double refundDepos;
 
     /**
      * 独立账户资产
      */
-    private Float indepAcctAssets;
+    private Double indepAcctAssets;
 
     /**
      * 其中：客户资金存款
      */
-    private Float clientDepos;
+    private Double clientDepos;
 
     /**
      * 其中：客户备付金
      */
-    private Float clientProv;
+    private Double clientProv;
 
     /**
      * 其中：交易席位费
      */
-    private Float transacSeatFee;
+    private Double transacSeatFee;
 
     /**
      * 应收款项类投资
      */
-    private Float investAsReceiv;
+    private Double investAsReceiv;
 
     /**
      * 应收款项
      */
-    private Float accReceivable;
+    private Double accReceivable;
 
     /**
      * 待摊费用
      */
-    private Float amorExp;
+    private Double amorExp;
 
     /**
      * 可供出售金融资产
      */
-    private Float faAvailForSale;
+    private Double faAvailForSale;
 
     /**
      * 持有至到期投资
      */
-    private Float htmInvest;
+    private Double htmInvest;
 
     /**
      * 定期存款
      */
-    private Float timeDeposits;
+    private Double timeDeposits;
 
     /**
      * 其他资产
      */
-    private Float othAssets;
+    private Double othAssets;
 
     /**
      * 现金及存放中央银行款项
      */
-    private Float cashReserCb;
+    private Double cashReserCb;
 
     /**
      * 存放同业和其它金融机构款项
      */
-    private Float deposInOthBfi;
+    private Double deposInOthBfi;
 
     /**
      * 应收保费
      */
-    private Float premiumReceiv;
+    private Double premiumReceiv;
 
     /**
      * 应收分保账款
      */
-    private Float reinsurReceiv;
+    private Double reinsurReceiv;
 
     /**
      * 应收分保合同准备金
      */
-    private Float reinsurResReceiv;
+    private Double reinsurResReceiv;
 
     /**
      * 融出资金
      */
-    private Float lendingFunds;
+    private Double lendingFunds;
 
     /**
      * 以摊余成本计量的金融资产
      */
-    private Float costFinAssets;
+    private Double costFinAssets;
 
     /**
      * 以公允价值计量且其变动计入其他综合收益的金融资产
      */
-    private Float fairValueFinAssets;
+    private Double fairValueFinAssets;
 
     /**
      * 其他应付款合计
      */
-    private Float othPayTotal;
+    private Double othPayTotal;
 
     /**
      * 长期应付款合计
      */
-    private Float longPayTotal;
+    private Double longPayTotal;
 
     /**
      * 其他权益工具:永续债
      */
-    private Float othEqPpbond;
+    private Double othEqPpbond;
 
     /**
      * 租赁负债
      */
-    private Float leaseLiab;
+    private Double leaseLiab;
 
     /**
      * 期末总股本
      */
-    private Float totalShare;
+    private Double totalShare;
 
     /**
      * 资本公积金
      */
-    private Float capRese;
+    private Double capRese;
 
     /**
      * 盈余公积金
      */
-    private Float surplusRese;
+    private Double surplusRese;
 
     /**
      * 未分配利润
      */
-    private Float undistrPorfit;
+    private Double undistrPorfit;
 
     /**
      * 专项储备
      */
-    private Float specialRese;
+    private Double specialRese;
 
     /**
      * 应交税费
      */
-    private Float taxesPayable;
+    private Double taxesPayable;
 
     /**
      * 应付利息
      */
-    private Float intPayable;
+    private Double intPayable;
 
     /**
      * 应付股利
      */
-    private Float divPayable;
+    private Double divPayable;
 
     /**
      * 其他应付款
      */
-    private Float othPayable;
+    private Double othPayable;
 
     /**
      * 预提费用
      */
-    private Float accExp;
+    private Double accExp;
 
     /**
      * 递延收益
      */
-    private Float deferredInc;
+    private Double deferredInc;
 
     /**
      * 应付短期债券
      */
-    private Float stBondsPayable;
+    private Double stBondsPayable;
 
     /**
      * 应付分保账款
      */
-    private Float payableToReinsurer;
+    private Double payableToReinsurer;
 
     /**
      * 保险合同准备金
      */
-    private Float rsrvInsurCont;
+    private Double rsrvInsurCont;
 
     /**
      * 代理买卖证券款
      */
-    private Float actingTradingSec;
+    private Double actingTradingSec;
 
     /**
      * 代理承销证券款
      */
-    private Float actingUwSec;
+    private Double actingUwSec;
 
     /**
      * 衍生金融负债
      */
-    private Float derivLiab;
+    private Double derivLiab;
 
     /**
      * 吸收存款
      */
-    private Float depos;
+    private Double depos;
 
     /**
      * 代理业务负债
      */
-    private Float agencyBusLiab;
+    private Double agencyBusLiab;
 
     /**
      * 预收保费
      */
-    private Float premReceivAdva;
+    private Double premReceivAdva;
 
     /**
      * 保户质押贷款
      */
-    private Float phPledgeLoans;
+    private Double phPledgeLoans;
 
     /**
      * 应付赔付款
      */
-    private Float indemPayable;
+    private Double indemPayable;
 
     /**
      * 应付保单红利
      */
-    private Float policyDivPayable;
+    private Double policyDivPayable;
 
     /**
      * 应付短期融资款
      */
-    private Float stFinPayable;
+    private Double stFinPayable;
 
     /**
      * 应付款项
      */
-    private Float payables;
+    private Double payables;
 
     /**
      * 持有待售的负债
      */
-    private Float hfsSales;
+    private Double hfsSales;
 
     /**
      * 应付票据及应付账款
      */
-    private Float accountsPay;
+    private Double accountsPay;
 
     /**
      * 合同负债
      */
-    private Float contractLiab;
+    private Double contractLiab;
 
     /**
      * 同业和其它金融机构存放款项
      */
-    private Float deposOthBfi;
+    private Double deposOthBfi;
 
     /**
      * 存入保证金
      */
-    private Float deposReceived;
+    private Double deposReceived;
 
     /**
      * 一年内到期的非流动负债
      */
-    private Float nonCurLiabDue1y;
+    private Double nonCurLiabDue1y;
 
     /**
      * 其他流动负债
      */
-    private Float othCurLiab;
+    private Double othCurLiab;
 
     /**
      * 流动负债合计
      */
-    private Float totalCurLiab;
+    private Double totalCurLiab;
 
     /**
      * 长期借款
      */
-    private Float ltBorr;
+    private Double ltBorr;
 
     /**
      * 应付债券
      */
-    private Float bondPayable;
+    private Double bondPayable;
 
     /**
      * 长期应付款
      */
-    private Float ltPayable;
+    private Double ltPayable;
 
     /**
      * 专项应付款
      */
-    private Float specificPayables;
+    private Double specificPayables;
 
     /**
      * 预计负债
      */
-    private Float estimatedLiab;
+    private Double estimatedLiab;
 
     /**
      * 递延所得税负债
      */
-    private Float deferTaxLiab;
+    private Double deferTaxLiab;
 
     /**
      * 递延收益-非流动负债
      */
-    private Float deferIncNonCurLiab;
+    private Double deferIncNonCurLiab;
 
     /**
      * 长期应付职工薪酬
      */
-    private Float ltPayrollPayable;
+    private Double ltPayrollPayable;
 
     /**
      * 其他综合收益
      */
-    private Float othCompIncome;
+    private Double othCompIncome;
 
     /**
      * 其他权益工具
      */
-    private Float othEqtTools;
+    private Double othEqtTools;
 
     /**
      * 其他权益工具(优先股)
      */
-    private Float othEqtToolsPShr;
+    private Double othEqtToolsPShr;
 
     /**
      * 未到期责任准备金
      */
-    private Float reserUnePrem;
+    private Double reserUnePrem;
 
     /**
      * 未决赔款准备金
      */
-    private Float reserOutstdClaims;
+    private Double reserOutstdClaims;
 
     /**
      * 寿险责任准备金
      */
-    private Float reserLinsLiab;
+    private Double reserLinsLiab;
 
     /**
      * 长期健康险责任准备金
      */
-    private Float reserLthinsLiab;
+    private Double reserLthinsLiab;
 
     /**
      * 独立账户负债
      */
-    private Float indeptAccLiab;
+    private Double indeptAccLiab;
 
     /**
      * 其中:质押借款
      */
-    private Float pledgeBorr;
+    private Double pledgeBorr;
 
     /**
      * 其他非流动负债
      */
-    private Float othNcl;
+    private Double othNcl;
 
     /**
      * 非流动负债合计
      */
-    private Float totalNcl;
+    private Double totalNcl;
 
     /**
      * 其他负债
      */
-    private Float othLiab;
+    private Double othLiab;
 
     /**
      * 负债合计
      */
-    private Float totalLiab;
+    private Double totalLiab;
 
     /**
      * 库存股
      */
-    private Float treasuryShare;
+    private Double treasuryShare;
 
     /**
      * 保户储金及投资款
      */
-    private Float phInvest;
+    private Double phInvest;
 
     /**
      * 一般风险准备
      */
-    private Float ordinRiskReser;
+    private Double ordinRiskReser;
 
     /**
      * 外币报表折算差额
      */
-    private Float forexDiffer;
+    private Double forexDiffer;
 
     /**
      * 未确认的投资损失
      */
-    private Float investLossUnconf;
+    private Double investLossUnconf;
 
     /**
      * 少数股东权益
      */
-    private Float minorityInt;
+    private Double minorityInt;
 
     /**
      * 股东权益合计(不含少数股东权益)
      */
-    private Float totalHldrEqyExcMinInt;
+    private Double totalHldrEqyExcMinInt;
 
     /**
      * 股东权益合计(含少数股东权益)
      */
-    private Float totalHldrEqyIncMinInt;
+    private Double totalHldrEqyIncMinInt;
 
     /**
      * 负债及股东权益总计
      */
-    private Float totalLiabHldrEqy;
+    private Double totalLiabHldrEqy;
 
     /**
      * 更新标识

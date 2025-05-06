@@ -45,437 +45,437 @@ public class StockIncomeReport {
     /**
      * 基本每股收益
      */
-    private Float basicEps;
+    private Double basicEps;
 
     /**
      * 稀释每股收益
      */
-    private Float dilutedEps;
+    private Double dilutedEps;
 
     /**
      * 营业总收入
      */
-    private Float totalRevenue;
+    private Double totalRevenue;
 
     /**
      * 营业收入
      */
-    private Float revenue;
+    private Double revenue;
 
     /**
      * 营业总成本
      */
-    private Float totalCogs;
+    private Double totalCogs;
 
     /**
      * 营业成本
      */
-    private Float operCost;
+    private Double operCost;
 
     /**
      * 营业总成本（二）
      */
-    private Float totalOpcost;
+    private Double totalOpcost;
 
     /**
      * 营业支出
      */
-    private Float operExp;
+    private Double operExp;
 
     /**
      * 销售费用
      */
-    private Float sellExp;
+    private Double sellExp;
 
     /**
      * 研发费用
      */
-    private Float rdExp;
+    private Double rdExp;
 
     /**
      * 管理费用
      */
-    private Float adminExp;
+    private Double adminExp;
 
     /**
      * 财务费用
      */
-    private Float finExp;
+    private Double finExp;
 
     /**
      * 财务费用:利息费用
      */
-    private Float finExpIntExp;
+    private Double finExpIntExp;
 
     /**
      * 财务费用:利息收入
      */
-    private Float finExpIntInc;
+    private Double finExpIntInc;
 
     /**
      * 利息收入
      */
-    private Float intIncome;
+    private Double intIncome;
 
     /**
      * 利息支出
      */
-    private Float intExp;
+    private Double intExp;
 
     /**
      * 资产减值损失
      */
-    private Float assetsImpairLoss;
+    private Double assetsImpairLoss;
 
     /**
      * 其他资产减值损失
      */
-    private Float othImpairLossAssets;
+    private Double othImpairLossAssets;
 
     /**
      * 其他经营净收益
      */
-    private Float nOthIncome;
+    private Double nOthIncome;
 
     /**
      * 其他业务净收益
      */
-    private Float nOthBIncome;
+    private Double nOthBIncome;
 
     /**
      * 其他业务收入
      */
-    private Float othBIncome;
+    private Double othBIncome;
 
     /**
      * 其他业务成本
      */
-    private Float otherBusCost;
+    private Double otherBusCost;
 
     /**
      * 投资收益
      */
-    private Float investIncome;
+    private Double investIncome;
 
     /**
      * 资产处置收益
      */
-    private Float assImpGain;
+    private Double assImpGain;
 
     /**
      * 非流动资产处置损失
      */
-    private Float ncaDisploss;
+    private Double ncaDisploss;
 
     /**
      * 汇兑收益
      */
-    private Float forexGain;
+    private Double forexGain;
 
     /**
      * 息税前利润
      */
-    private Float ebit;
+    private Double ebit;
 
     /**
      * 息税折旧摊销前利润
      */
-    private Float ebitda;
+    private Double ebitda;
 
     /**
      * 所得税费用
      */
-    private Float incomeTax;
+    private Double incomeTax;
 
     /**
      * 营业税金及附加
      */
-    private Float bizTaxSurchg;
+    private Double bizTaxSurchg;
 
     /**
      * 营业利润
      */
-    private Float operateProfit;
+    private Double operateProfit;
 
     /**
      * 营业外收入
      */
-    private Float nonOperIncome;
+    private Double nonOperIncome;
 
     /**
      * 营业外支出
      */
-    private Float nonOperExp;
+    private Double nonOperExp;
 
     /**
      * 利润总额
      */
-    private Float totalProfit;
+    private Double totalProfit;
 
     /**
      * 净利润(含少数股东损益)
      */
-    private Float nIncome;
+    private Double nIncome;
 
     /**
      * 净利润(不含少数股东损益)
      */
-    private Float nIncomeAttrP;
+    private Double nIncomeAttrP;
 
     /**
      * 扣除非经常性损益后的净利润（更正前）
      */
-    private Float netAfterNrLpCorrect;
+    private Double netAfterNrLpCorrect;
 
     /**
      * 少数股东损益
      */
-    private Float minorityGain;
+    private Double minorityGain;
 
     /**
      * 其他综合收益
      */
-    private Float othComprIncome;
+    private Double othComprIncome;
 
     /**
      * 综合收益总额
      */
-    private Float tComprIncome;
+    private Double tComprIncome;
 
     /**
      * 归属于母公司(或股东)的综合收益总额
      */
-    private Float comprIncAttrP;
+    private Double comprIncAttrP;
 
     /**
      * 归属于少数股东的综合收益总额
      */
-    private Float comprIncAttrMs;
+    private Double comprIncAttrMs;
 
     /**
      * 可供分配利润
      */
-    private Float distableProfit;
+    private Double distableProfit;
 
     /**
      * 保险业务支出
      */
-    private Float insuranceExp;
+    private Double insuranceExp;
 
     /**
      * 未分配利润
      */
-    private Float undistProfit;
+    private Double undistProfit;
 
     /**
      * 信用减值损失
      */
-    private Float creditImpaLoss;
+    private Double creditImpaLoss;
 
     /**
      * 其他收益
      */
-    private Float othIncome;
+    private Double othIncome;
 
     /**
      * 资产处置收益
      */
-    private Float assetDispIncome;
+    private Double assetDispIncome;
 
     /**
      * 持续经营净利润
      */
-    private Float continuedNetProfit;
+    private Double continuedNetProfit;
 
     /**
      * 终止经营净利润
      */
-    private Float endNetProfit;
+    private Double endNetProfit;
 
     /**
      * 对联营企业和合营企业的投资收益
      */
-    private Float assInvestIncome;
+    private Double assInvestIncome;
 
     /**
      * 已赚保费
      */
-    private Float premEarned;
+    private Double premEarned;
 
     /**
      * 手续费及佣金收入
      */
-    private Float commIncome;
+    private Double commIncome;
 
     /**
      * 手续费及佣金净收入
      */
-    private Float nCommisIncome;
+    private Double nCommisIncome;
 
     /**
      * 保险业务收入
      */
-    private Float premIncome;
+    private Double premIncome;
 
     /**
      * 分出保费
      */
-    private Float outPrem;
+    private Double outPrem;
 
     /**
      * 提取未到期责任准备金
      */
-    private Float unePremReser;
+    private Double unePremReser;
 
     /**
      * 分保费收入
      */
-    private Float reinsIncome;
+    private Double reinsIncome;
 
     /**
      * 证券承销业务净收入
      */
-    private Float nSecTbIncome;
+    private Double nSecTbIncome;
 
     /**
      * 证券承销净收益
      */
-    private Float nSecUwIncome;
+    private Double nSecUwIncome;
 
     /**
      * 受托客户资产管理业务净收入
      */
-    private Float nAssetMgIncome;
+    private Double nAssetMgIncome;
 
     /**
      * 以公允价值计量且其变动计入当期损益的金融资产净收益
      */
-    private Float fvValueChgGain;
+    private Double fvValueChgGain;
 
     /**
      * 手续费及佣金支出
      */
-    private Float commExp;
+    private Double commExp;
 
     /**
      * 退保金
      */
-    private Float premRefund;
+    private Double premRefund;
 
     /**
      * 赔付总支出
      */
-    private Float compensPayout;
+    private Double compensPayout;
 
     /**
      * 提取保险责任准备金
      */
-    private Float reserInsurLiab;
+    private Double reserInsurLiab;
 
     /**
      * 保户红利支出
      */
-    private Float divPayt;
+    private Double divPayt;
 
     /**
      * 分保费用
      */
-    private Float reinsExp;
+    private Double reinsExp;
 
     /**
      * 摊回赔付支出
      */
-    private Float compensPayoutRefu;
+    private Double compensPayoutRefu;
 
     /**
      * 摊回保险责任准备金
      */
-    private Float insurReserRefu;
+    private Double insurReserRefu;
 
     /**
      * 摊回分保费用
      */
-    private Float reinsCostRefund;
+    private Double reinsCostRefund;
 
     /**
      * 盈余公积转入
      */
-    private Float transferSurplusRese;
+    private Double transferSurplusRese;
 
     /**
      * 住房周转金转入
      */
-    private Float transferHousingImpre;
+    private Double transferHousingImpre;
 
     /**
      * 其他转入
      */
-    private Float transferOth;
+    private Double transferOth;
 
     /**
      * 调整以前年度损益
      */
-    private Float adjLossgain;
+    private Double adjLossgain;
 
     /**
      * 提取法定盈余公积
      */
-    private Float withdraLegalSurplus;
+    private Double withdraLegalSurplus;
 
     /**
      * 提取法定公益金
      */
-    private Float withdraLegalPubfund;
+    private Double withdraLegalPubfund;
 
     /**
      * 提取企业发展基金
      */
-    private Float withdraBizDevfund;
+    private Double withdraBizDevfund;
 
     /**
      * 提取储备基金
      */
-    private Float withdraReseFund;
+    private Double withdraReseFund;
 
     /**
      * 提取任意盈余公积金
      */
-    private Float withdraOthErsu;
+    private Double withdraOthErsu;
 
     /**
      * 职工奖金福利
      */
-    private Float workersWelfare;
+    private Double workersWelfare;
 
     /**
      * 可分配给股东的利润
      */
-    private Float distrProfitShrhder;
+    private Double distrProfitShrhder;
 
     /**
      * 应付优先股股利
      */
-    private Float prfsharePayableDvd;
+    private Double prfsharePayableDvd;
 
     /**
      * 应付普通股股利
      */
-    private Float comsharePayableDvd;
+    private Double comsharePayableDvd;
 
     /**
      * 转作股本的普通股股利
      */
-    private Float capitComstockDiv;
+    private Double capitComstockDiv;
 
     /**
      * 套期保值业务净收益
      */
-    private Float netExpoHedgingBenefits;
+    private Double netExpoHedgingBenefits;
 
     /**
      * 以摊余成本计量的金融资产终止确认收益
      */
-    private Float amodcostFinAssets;
+    private Double amodcostFinAssets;
 
     /**
      * 更新标识

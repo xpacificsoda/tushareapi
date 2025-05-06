@@ -21,8 +21,8 @@ public class StockManagerRewardInfo {
     private String title;
 
     // 奖励类型
-    private float reward;
+    private Double reward;
 
     // 持股数
-    private float holdVol;
+    private Double holdVol;
 }

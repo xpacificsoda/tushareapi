@@ -14,17 +14,17 @@ public class StockDividendRecord {
     private String endDate;
     private String annDate;
     private String divProc;
-    private Float stkDiv;
-    private Float stkBoRate;
-    private Float stkCoRate;
-    private Float cashDiv;
-    private Float cashDivTax;
+    private Double stkDiv;
+    private Double stkBoRate;
+    private Double stkCoRate;
+    private Double cashDiv;
+    private Double cashDivTax;
     private String recordDate;
     private String exDate;
     private String payDate;
     private String divListdate;
     private String impAnnDate;
     private String baseDate;
-    private Float baseShare;
+    private Double baseShare;
     
 }

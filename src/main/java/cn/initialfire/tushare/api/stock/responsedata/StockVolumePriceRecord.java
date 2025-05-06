@@ -11,13 +11,13 @@ public class StockVolumePriceRecord {
 
     private String tsCode;
     private String tradeDate;
-    private float open;
-    private float high;
-    private float low;
-    private float close;
-    private float preClose;
-    private float change;
-    private float pctChg;
-    private float vol;
-    private float amount;
+    private Double open;
+    private Double high;
+    private Double low;
+    private Double close;
+    private Double preClose;
+    private Double change;
+    private Double pctChg;
+    private Double vol;
+    private Double amount;
 }

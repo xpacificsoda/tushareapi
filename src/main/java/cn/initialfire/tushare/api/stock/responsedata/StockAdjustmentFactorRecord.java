@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class StockAdjustmentFactorRecord {
     private String tsCode;
     private String tradeDate;
-    private float adjFactor;
+    private Double adjFactor;
 }
