@@ -15,4 +15,11 @@ public class TushareResponse {
     private String msg;
     private String requestId;
     private JsonNode data;
+
+    public boolean hasMore() {
+        if (data == null) {
+            return false;
+        }
+        return data.get("has_more").asBoolean();
+    }
 }

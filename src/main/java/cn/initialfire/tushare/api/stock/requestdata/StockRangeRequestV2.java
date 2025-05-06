@@ -4,12 +4,14 @@ import lombok.Data;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class StockRangeRequestV2 {
+@EqualsAndHashCode(callSuper=true)
+public class StockRangeRequestV2 extends BaseRequestData {
 
     // 股票代码
     private String tsCode;

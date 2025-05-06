@@ -4,12 +4,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-
+import lombok.EqualsAndHashCode;
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class QueryStockDividendRequest {
+@EqualsAndHashCode(callSuper=true)
+public class QueryStockDividendRequest extends BaseRequestData {
     private String tsCode;
     private String annDate;
     private String recordDate;
