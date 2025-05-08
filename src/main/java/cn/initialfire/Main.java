@@ -1,10 +1,9 @@
 package cn.initialfire;
 
 import cn.initialfire.tushare.api.TushareAPI;
-import cn.initialfire.tushare.api.stock.requestdata.QueryStockListRequest;
-import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV2;
-import cn.initialfire.tushare.api.stock.responsedata.StockBasicInfo;
-import cn.initialfire.tushare.api.stock.responsedata.StockManagerInfo;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV8;
+import cn.initialfire.tushare.api.stock.responsedata.StockTradeDateInfo;
+import cn.initialfire.tushare.api.stock.commonvo.StockEnums;
 
 import java.util.List;
 import java.io.FileInputStream;
@@ -25,25 +24,11 @@ public class Main {
             System.exit(1);
         }
         
-        StockRangeRequestV2 request = StockRangeRequestV2.builder().build();
-        int total = 0;
-        int prevCount = 0;
-        List<StockManagerInfo> list = null;
-        do {
-            prevCount = list == null ? 0 : list.size();
-            total += prevCount;
-            request.setOffset(total);
-            
-            list = TushareAPI.Stock.BasicDataService.queryStockManagerInfoList(request);
-            if (list.size() == 0) {
-                break;
-            }
-
-            StockManagerInfo stockManagerInfo = list.get(0);
-            System.out.println("First MGR: " + stockManagerInfo.getTsCode() + " " + stockManagerInfo.getName());
-
-            System.out.println("Count: " + prevCount + " -> " + list.size());
-        } while (prevCount <= list.size());
-        System.out.println("Total: " + total);
+        StockRangeRequestV8 request = StockRangeRequestV8.builder()
+            .exchange(StockEnums.Exchange.SSE)
+            .isOpen("1")
+            .build();
+        List<StockTradeDateInfo> list = TushareAPI.Stock.BasicDataService.queryStockTradeCalender(request);
+        System.out.println(list);
     }
 }

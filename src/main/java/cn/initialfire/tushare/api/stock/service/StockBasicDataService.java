@@ -10,8 +10,10 @@ import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV2;
 import cn.initialfire.tushare.api.stock.responsedata.StockManagerRewardInfo;
 import cn.initialfire.tushare.api.stock.responsedata.StockManagerInfo;
 import cn.initialfire.tushare.api.stock.responsedata.StockNameChangeRecord;
+import cn.initialfire.tushare.api.stock.responsedata.StockTradeDateInfo;
 import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV6;
 import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV7;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV8;
 import cn.initialfire.tushare.api.stock.responsedata.StockIPOInfo;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -30,6 +32,15 @@ public class StockBasicDataService {
      */
     public List<StockBasicInfo> queryStockList(QueryStockListRequest request) {
         return TushareHttp.instance().send("stock_basic", request, new TypeReference<List<StockBasicInfo>>() {});
+    }
+
+    /**
+     * 交易日历接口：https://tushare.pro/document/2?doc_id=26
+     * @param request
+     * @return
+     */
+    public List<StockTradeDateInfo> queryStockTradeCalender(StockRangeRequestV8 request) {
+        return TushareHttp.instance().send("trade_cal", request, new TypeReference<List<StockTradeDateInfo>>() {});
     }
 
     /**
