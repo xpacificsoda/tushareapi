@@ -1,10 +1,11 @@
 package cn.initialfire;
 
 import cn.initialfire.tushare.api.TushareAPI;
+import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequest;
 import cn.initialfire.tushare.api.stock.requestdata.StockRangeRequestV8;
 import cn.initialfire.tushare.api.stock.responsedata.StockTradeDateInfo;
 import cn.initialfire.tushare.api.stock.commonvo.StockEnums;
-
+import cn.initialfire.tushare.api.stock.responsedata.StockBasicMetric;
 import java.util.List;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -30,5 +31,13 @@ public class Main {
             .build();
         List<StockTradeDateInfo> list = TushareAPI.Stock.BasicDataService.queryStockTradeCalender(request);
         System.out.println(list);
+
+        List<StockBasicMetric> list2 = TushareAPI.Stock.TradeDataService.dailyBasicMetricList(StockRangeRequest.builder()
+                .tsCode("002027.sz")
+                .tradeDate("")
+                .startDate("20250501")
+                .endDate("20250508")
+                .build());
+        System.out.println(list2);
     }
 }

@@ -5,7 +5,7 @@ import cn.initialfire.tushare.api.stock.responsedata.StockVolumePriceRecord;
 import cn.initialfire.tushare.api.stock.responsedata.StockAdjustmentFactorRecord;
 import cn.initialfire.tushare.api.TushareHttp;
 import com.fasterxml.jackson.core.type.TypeReference;
-
+import cn.initialfire.tushare.api.stock.responsedata.StockBasicMetric;
 import java.util.List;
 
 /**
@@ -47,6 +47,15 @@ public class StockTradeDataService {
      */
     public List<StockAdjustmentFactorRecord> adjustmentFactor(StockRangeRequest request) {
         return TushareHttp.instance().send("adj_factor", request, new TypeReference<List<StockAdjustmentFactorRecord>>() {});
+    }
+
+    /**
+     * 每日指标接口：https://tushare.pro/document/2?doc_id=32
+     * @param request
+     * @return
+     */
+    public List<StockBasicMetric> dailyBasicMetricList(StockRangeRequest request) {
+        return TushareHttp.instance().send("daily_basic", request, new TypeReference<List<StockBasicMetric>>() {});
     }
 
     private List<StockVolumePriceRecord> tradeDataList(StockRangeRequest request, String periodType) {
